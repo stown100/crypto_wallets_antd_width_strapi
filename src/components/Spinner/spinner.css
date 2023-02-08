@@ -1,0 +1,11 @@
+.example {
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: #f4f7fe;
+  border-radius: 4px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
