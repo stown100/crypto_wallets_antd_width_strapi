@@ -17,8 +17,6 @@ const Authorized = () => {
   const [password, setPassword] = useState("");
   const token = getCookie("token");
 
-  console.log("123second")
-
   const login = (identifier, password) => {
     auth
       .authorized({ identifier, password })
@@ -36,8 +34,6 @@ const Authorized = () => {
       });
     }
   }, [token]);
-
-  console.log("123first")
 
   return (
     <div className={styles.AuthorizedBlock}>
