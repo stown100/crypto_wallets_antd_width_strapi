@@ -19,6 +19,8 @@ export default function App() {
   const [currentUser, setCurrentUser] = useState({});
   const [navId, setNavId] = useState(1);
 
+  console.log("456second")
+
   const authorided = (token) => {
     auth.getAuthMe(token).then((res) => {
       if (res) {
