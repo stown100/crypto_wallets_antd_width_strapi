@@ -5,7 +5,7 @@ class Api {
   }
 
   getNavBarItems(token, id) {
-    return fetch(`${this.url}/navibars?filters[departs][id]=${id}`, {
+    return fetch(`${this.url}/navibars?filters[departs][SOME_FIELD][id]=${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +65,7 @@ class Api {
   };
 }
 const api = new Api({
-  url: "http://192.168.1.105:1337/DELETE_ME",
+  url: "http://192.168.1.105:1337/api2DELETE_ME",
   // url: "http://localhost:1337/api",
 });
 export default api;
