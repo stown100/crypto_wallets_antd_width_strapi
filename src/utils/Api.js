@@ -60,11 +60,12 @@ class Api {
       return res.json();
     }
     // если ошибка, отклоняем промис
+    console.log(res);
     return Promise.reject(`Ошибка: ${res.status}`);
   };
 }
 const api = new Api({
-  url: "http://192.168.1.105:1337/api",
+  url: "http://192.168.1.105:1337/DELETE_ME",
   // url: "http://localhost:1337/api",
 });
 export default api;
