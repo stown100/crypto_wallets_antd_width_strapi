@@ -37,6 +37,8 @@ const Authorized = () => {
     }
   }, [token]);
 
+  console.log("123first")
+
   return (
     <div className={styles.AuthorizedBlock}>
       <Form
